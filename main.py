@@ -23,7 +23,6 @@ from kivy.core.window import Window
 # Window.size = (350 , 600)
 
 
-
 #helper files
 custom_mddialog = '''
 <CustomDialog>:
