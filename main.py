@@ -217,8 +217,8 @@ Screen:
         ScrollView:
             BoxLayout:
                 orientation: 'vertical'
-                padding: [10, 100, 10, 50]  # Add left and right padding
-                spacing: '20px'
+                padding: [30, 100, 30, 50]  # Add left and right padding
+                spacing: '50px'
                 size_hint_y: None
                 height: max(self.minimum_height, root.height)
                 MDLabel:
@@ -482,8 +482,8 @@ Screen:
         ScrollView:
             BoxLayout:
                 orientation: 'vertical'
-                padding: [10, 100, 10, 50]  # Add left and right padding
-                spacing: '20px'
+                padding: [30, 100, 30, 50]  # Add left and right padding
+                spacing: '50px'
                 size_hint_y: None
                 height: max(self.minimum_height, root.height)
                 MDLabel:
@@ -673,7 +673,7 @@ Screen:
     name: 'data_input_screen'
     FloatLayout:
         size_hint: None, None
-        pos_hint: {'center_x': 0.6, 'center_y': 0.6}
+        pos_hint: {'center_x': 0.6, 'center_y': 0.8}
         # MDLabel:
         #     text: 'Tab on the below button to add either PHC or SHC record'
         #     halign: 'left'
@@ -683,7 +683,7 @@ Screen:
             theme_text_color: 'Custom'
             text_color: app.theme_cls.primary_color
             on_release: app.root.current = 'phcdata_input_screen'
-            pos_hint: {'center_x': 0.3, 'center_y': 0.6}
+            pos_hint: {'center_x': 0.3, 'center_y': 0.7}
         MDRectangleFlatIconButton:
             icon: 'plus-box'
             text: 'Add SHC Data'
@@ -700,7 +700,7 @@ Screen:
     name: 'view_screen'
     FloatLayout:
         size_hint: None, None
-        pos_hint: {'center_x': 0.6, 'center_y': 0.6}
+        pos_hint: {'center_x': 0.6, 'center_y': 0.8}
         MDRectangleFlatIconButton:
             icon: 'eye'
             text: 'View PHC Data'
@@ -714,7 +714,7 @@ Screen:
             theme_text_color: 'Custom'
             text_color: app.theme_cls.primary_color
             on_release: app.root.current = 'shc_data_view_screen'
-            pos_hint: {'center_x': 0.3, 'center_y': 0.5}
+            pos_hint: {'center_x': 0.3, 'center_y': 0.7}
         MDRectangleFlatIconButton:
             icon: 'eye'
             text: 'View SSHIA Data'
@@ -731,7 +731,7 @@ Screen:
     name: 'export_screen'
     FloatLayout:
         size_hint: None, None
-        pos_hint: {'center_x': 0.6, 'center_y': 0.6}
+        pos_hint: {'center_x': 0.6, 'center_y': 0.8}
         MDRectangleFlatIconButton:
             icon: 'file-pdf-box'
             text: 'Export as PDF'
