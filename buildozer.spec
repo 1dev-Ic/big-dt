@@ -51,7 +51,7 @@ icon.filename = %(source.dir)s/img/ADSCHMA-logo.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
-orientation = portrait, landscape, portrait-reverse, landscape-reverse
+#orientation = portrait, landscape
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -104,7 +104,7 @@ android.permissions = android.permission.INTERNET, (name=android.permission.WRIT
 #android.api = 31
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 23
+#android.minapi = 21
 
 # (int) Android SDK version to use
 #android.sdk = 20
@@ -113,7 +113,7 @@ android.minapi = 23
 #android.ndk = 23b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-android.ndk_api = 23
+#android.ndk_api = 21
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
