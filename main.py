@@ -30,7 +30,7 @@ class WelcomeScreen(Screen):
         # Set background color to grey
         self.md_bg_color = (0.5, 0.5, 0.5, 1)
         # Add label above the logo
-        top_label = MDLabel(text='Big-DT, A POWERFUL SSHIA DATA SUMMARIZING APP', halign='center', pos_hint={'center_x': 0.5, 'center_y': 0.9}, font_style='H4')
+        top_label = MDLabel(text='ASCHMA SSHIA E-DATA TOOL', halign='center', pos_hint={'center_x': 0.5, 'center_y': 0.9}, font_style='H4')
         self.add_widget(top_label)
         # Load the image and add it to the screen
         self.add_widget(Image(source='img/ADSCHMA-logo.png', size_hint=(None, None), size=(200, 200), pos_hint={'center_x': 0.5, 'center_y': 0.6}))
