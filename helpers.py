@@ -100,7 +100,7 @@ Screen:
                 font_style: 'Body1'
                 
             MDLabel:
-                text: 'When the you click on the SSHIA button, you will be directed to a screen where you can add your personal details. Clicking on the Input Data button will open a screen where you can select either add PHC data or add SHC data to add new data. Clicking on the View button will show you a list of the records you entered in the data input page and also show the summarized data. Clicking on the Export Data button will allow you to export the summarized data into various formats such as Excel, or PDF.'
+                text: 'When you click on the SSHIA button on the navigation menu, you will be taken to a screen where you can add your personal details. Clicking on the Input Data button on the navigation menu will open a screen where you can select either add PHC data or add SHC data to add new data. Clicking on the View button will show you the lists of all records you added to the data input page and also show the summarized data. Clicking on the Export Data button will allow you to export the summarized data into various formats such as Excel, PDF or send it to the server.'
                 halign: 'justify'
                 font_style: 'Body1'
                 size_hint_y: None
