@@ -30,7 +30,7 @@ class WelcomeScreen(Screen):
         # Set background color to grey
         self.md_bg_color = (0.5, 0.5, 0.5, 1)
         # Add label above the logo
-        top_label = MDLabel(text='ASCHMA SSHIA DATA TOOL', halign='center', pos_hint={'center_x': 0.5, 'center_y': 0.9}, font_style='H4')
+        top_label = MDLabel(text='Big-DT, A POWERFUL SSHIA DATA SUMMARIZING APP', halign='center', pos_hint={'center_x': 0.5, 'center_y': 0.9}, font_style='H4')
         self.add_widget(top_label)
         # Load the image and add it to the screen
         self.add_widget(Image(source='img/ADSCHMA-logo.png', size_hint=(None, None), size=(200, 200), pos_hint={'center_x': 0.5, 'center_y': 0.6}))
@@ -41,7 +41,7 @@ class WelcomeScreen(Screen):
         self.progress_bar = ProgressBar(max=100, pos_hint={'center_x': 0.5, 'center_y': 0.2}, size_hint=(0.8, None), height=10)
         self.add_widget(self.progress_bar)  
         # Add label below the progress bar
-        bottom_label = MDLabel(text='© 2023 Powered by Ishaya Chahyaandida', halign='center', pos_hint={'center_x': 0.5, 'center_y': 0.1}, font_style='Body1')
+        bottom_label = MDLabel(text='© 2023 Powered by Ishaya, Chahyaandida [08143171712].', halign='center', pos_hint={'center_x': 0.5, 'center_y': 0.1}, font_style='Body1')
         self.add_widget(bottom_label)
     def on_enter(self):
         Clock.schedule_interval(self.update_progress, 0)  
@@ -66,12 +66,7 @@ class BaseScreen(Screen):
         self.add_widget(Builder.load_string(basescreen_help))
 
 class MainScreen(BaseScreen):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        Builder.load_string(mainscreen_help)
-        ms = MainScreen()
-        welcome_label = ms.ids.welcome_text
-        welcome_label.text = "Welcome [New Name]"
+    pass
 
 class SSHIAScreen(BaseScreen):
     pass
@@ -631,7 +626,7 @@ class ADSCHMAApp(MDApp):
             close_button.text = "Close"
             dialog.title = "Success!"
             dialog.type = "alert"
-            dialog.text = "Table data cleared successfully?"
+            dialog.text = "Table data cleared successfully!"
             dialog.open()
         except sqlite3.Error as error:
             Builder.load_string(custom_mddialog)
