@@ -237,7 +237,7 @@ class SSHIADataViewScreen(Screen):
         except sqlite3.OperationalError:  # catch error if table doesn't exist
             return []  # return empty list if table doesn't exist
         items = c.fetchall()
-        if not rows:  # if no rows in the table, return empty list
+        if not items and not rows:  # if no rows in the table, return empty list
             return []
         
         data_list = []  # create empty list to store data for each record
