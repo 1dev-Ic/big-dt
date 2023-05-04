@@ -235,7 +235,7 @@ class SSHIADataViewScreen(Screen):
         try:
             c.execute("SELECT * FROM shc_data")
         except sqlite3.OperationalError:  # catch error if table doesn't exist
-            return []  # return empty list if table doesn't exist
+            pass  # return empty list if table doesn't exist
         items = c.fetchall()
         if not items and not rows:  # if no rows in the table, return empty list
             return []
