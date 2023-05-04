@@ -342,7 +342,7 @@ class SSHIADataViewScreen(Screen):
             total_deaths = maternal_death + neonatal + infant + children
             total_services = referred_enrollees + anc_enrollees + normal_delivery + immunization_services + treated_malaria_under_5 + treated_malaria_above_5 + treated_hypertension + treated_diabetes_mellistus + treated_typhoid + treated_rti_under_5 + treated_rti_above_5 + treated_diarrhea_under_5 + treated_diarrhea_above_5 + treated_uti + treated_gastroenteritis + others
             # exception to pass empty datefield for capitation payment
-            if row[5] != '' or len(row[5]) != 0 or row[4] != "Yes":
+            if row[5] != '' or len(row[5]) != 0:
                 payment_date = datetime.strptime(row[5], '%d/%m/%Y').day
                 #condition to check whether payment was made in 5 days
                 if payment_date <= 5 and payment_date <= report_month:
