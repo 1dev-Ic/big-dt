@@ -1,6 +1,6 @@
 # BigDT — ASCHMA SSHIA Data Tool
 
-BigDT is a mobile data collection and reporting application developed in 2023 for the Adamawa State Contributory Health Management Agency (ASCHMA). It supported monthly health facility reporting by Monitoring and Evaluation (M&E) Officers across Adamawa State’s 21 Local Government Areas (LGAs).
+BigDT is a mobile data collection and reporting application developed in 2023 by **Chahyaandida Ishaya** for the Adamawa State Contributory Health Management Agency (ASCHMA). It supported monthly health facility reporting by Monitoring and Evaluation (M&E) Officers across Adamawa State’s 21 Local Government Areas (LGAs).
 
 The tool was designed to help officers record facility-level information, review submitted records, and compile LGA summaries for reporting to ASCHMA. It covers reporting from primary health centres (PHCs) and secondary health centres (SHCs), including enrolment, capitation and claims, service utilisation, referrals, and mortality indicators.
 
@@ -42,10 +42,10 @@ buildozer android debug
 
 The source targets Kivy 2.1.0 and includes KivyMD, Pillow, and SQLite-related requirements in `buildozer.spec`. Toolchain versions and dependencies may need updating to build successfully on a current system.
 
-## Operational status and maintenance
-
-The 2023–2025 field deployment has ended. The checked-in source currently presents PDF export, Excel export, and server submission as unfinished actions. Those capabilities or the original operational workflow may need to be restored and validated before reuse. Review the code, data handling, and build configuration before deploying a maintained version.
-
 ## Acknowledgement
 
-Developed for the Adamawa State Contributory Health Management Agency (ASCHMA) to support LGA-level health facility monitoring and reporting.
+Developed by **Chahyaandida Ishaya** for ASCHMA to support health facility monitoring and reporting across the 21 LGAs. The 2023–2025 use period ended when programme funding stopped. This repository is preserved as a record of the project; review the source and data handling before reuse.
+
+## Author
+
+**Chahyaandida Ishaya** — project developer.
